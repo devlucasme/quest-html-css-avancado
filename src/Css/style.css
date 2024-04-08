@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(../images/bg-desktop.svg);
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;    
+}
+
+header .logo {
+    padding: 4rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1.5rem;
+}
+
+.container .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.container .image {
+    width: 800px;
+}
+
+.container .information .subtitle {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-left: 3rem;
+}
+
+.container .information .text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 3rem;
+}
+
+.container .information .btn-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container .information .btn-container .btn {
+    border: none;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 1rem;
+    width: 40%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.container .information .btn-container a .btn:hover {
+    background-color: var(--active-color);
+    border: 1px solid var(--active-color);
+    color: #fff;
+}
+
+footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+footer .icons li a i {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+footer .icons li a i:first-child {
+    width: 47px;
+    height: 47px;
+    text-align: center;
+}
+
+footer .icons li a i:hover {
+    border: 1px solid var(--active-color);
+    color: var(--active-color);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1135px) {
+   
+    .container .image {
+        width: 500px;
+    }
+
+    .container .information .subtitle {
+        font-size: 20px;
+    }
+
+    .container .information .text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 760px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .image {
+        width: 300px;
+    }
+
+}
